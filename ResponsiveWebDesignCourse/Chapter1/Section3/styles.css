@@ -1,5 +1,6 @@
 h1{
     text-align: center;
+    /* background-color: rgb(0,255,255); */
 }
 .container{
     background-color: rgb(255, 255, 255);
@@ -10,12 +11,29 @@ h1{
     width: 200px;
     margin: 10px auto;
 }
-.one{
-    background-color: rgb(255, 255, 0);
+.red{
+    background-color: rgb(255, 0, 0);
 }
-.two{
-    background-color: rgb(0, 255, 255);
+.green{
+    background-color: #00ff00;
 }
-.three{
-    background-color: rgb(255, 0, 255);
+.blue{
+    background-color: rgb(0, 0, 255);
 }
+/*
+    Primary Colors:
+        Red(255,0,0),
+        Green(0,255,0),
+        Blue(0,0,255)
+    Secondary Colors:
+        Yellow(255,255,0),
+        Cyan(0,255,255),
+        Magenta(255,0,255),
+    Tertiary Colors: 
+        Orange(255,127,0),
+        Spring Green(0,255,127),
+        Violet(127,0,255),
+        Chartreuse Green(127,255,0),
+        Azure(0,127,255),
+        Rose(255,0,127) 
+*/
