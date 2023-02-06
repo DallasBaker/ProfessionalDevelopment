@@ -1,0 +1,70 @@
+<!-- TODO Work on this page more to complete it -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form Project</title>
+</head>
+<body>
+    <h1 id="title">Gaming Profile Survey</h1>
+    <p id="description">This survey is to gather information on people who play games.</p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">
+                Profile Name: 
+                <input type="text" name="" id="name" placeholder="enter your Profile Name" required>
+            </label>
+            <label for="email" id="email-label">
+                Email: 
+                <input type="email" name="" id="email" placeholder="enter your email here" required>
+            </label>
+            <label for="number" id="number-label">
+                How many hours spent playing games this week: 
+                <input type="number" name="" id="number" min="0" max="168" placeholder="place a number between 1-100">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="game-list">
+                List some games you play regularly: 
+                <textarea name="" id="game-list" cols="30" rows="3"></textarea>
+            </label>
+            <label for="dropdown">
+                How skilled are you in the games you play: 
+                <select name="skill-level" id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="banned">
+                Have you ever been banned from a game:
+                <label for="ban">
+                    <input type="radio" name="ban-noBan" id="ban" class="banned" value="1"> 
+                    Yes
+                </label>
+                <label for="no-ban">
+                    <input type="radio" name="ban-noBan" id="no-ban" class="banned" value="2"> 
+                    No
+                </label>
+            </label>
+            <label for="reasons">
+                what were the reasons for your ban(s) if you have had any(select all that apply):
+                <label for="cheating">
+                    <input type="checkbox" name="cheating" id='cheating' class="reasons" value="cheating"> 
+                    Cheating
+                </label>  
+                <label for="comms-abuse">
+                    <input type="checkbox" name="comms-abuse" id='comms-abuse' class="reasons" value="comms abuse"> 
+                    Comms Abuse
+                </label>
+            </label>
+        </fieldset>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
