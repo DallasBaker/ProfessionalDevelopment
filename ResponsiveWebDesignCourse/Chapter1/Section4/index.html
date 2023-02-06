@@ -18,26 +18,29 @@
                 <label for="new-password">Create a New Password: <input id="new-password" type="password" required pattern="[a-z0-5]{8,}"></label>
             </fieldset>
             <fieldset>
-                <label for="personal-account"><input type="radio" name="account-type" id="personal-account"> Personal Account</label>
-                <label for="business-account"><input type="radio" name="account-type" id="business-account"> Business Account</label>
+                <label for="personal-account"><input type="radio" name="account-type" id="personal-account" class="inline"> Personal Account</label>
+                <label for="business-account"><input type="radio" name="account-type" id="business-account" class="inline"> Business Account</label>
                 <label for="terms-and-conditions">
-                    <input type="checkbox" name="" id="terms-and-conditions" required>
+                    <input type="checkbox" name="the-conditions" id="terms-and-conditions" class="inline" required>
                     I accept the  
                     <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
                 </label>
             </fieldset>
             <fieldset>
-                <label for="">Upload a profile picture: <input type="file" name="" id=""></label>
-                <label for="">Input your age (years): <input type="number" name="" id="" min="13" max="120"></label>
-                <label for="">
+                <label for="profile-picture">Upload a profile picture: <input type="file" name="profile-field" id="profile-picture" ></label>
+                <label for="age">Input your age (years): <input type="number" name="age-field" id="age" min="13" max="120"></label>
+                <label for="referrer">
                     How did you hear about us?
-                    <select name="" id="">
+                    <select name="referred-field" id="referrer">
                         <option value="">(select one)</option>
-                        <option value="">freeCodeCamp News</option>
-                        <option value="">freeCodeCamp YouTube Channel</option>
-                        <option value="">freeCodeCamp Forum</option>
-                        <option value="">Other</option>
+                        <option value="1">freeCodeCamp News</option>
+                        <option value="2">freeCodeCamp YouTube Channel</option>
+                        <option value="3">freeCodeCamp Forum</option>
+                        <option value="4">Other</option>
                     </select>
+                </label>
+                <label for="bio">Provide a bio: 
+                    <textarea name="bio-field" id="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
                 </label>
             </fieldset>
             <input type="submit" value="Submit">
