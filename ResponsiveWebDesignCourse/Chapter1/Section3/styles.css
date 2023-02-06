@@ -12,6 +12,10 @@ h1{
     margin: 10px auto;
 }
 .sleeve{
+    /* border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: black; */
+    border-left: 10px double rgba(0, 0, 0, .75);
     background-color: rgba(255, 255, 255, .5);
     width: 110px;
     height: 25px;
@@ -24,13 +28,16 @@ h1{
     display: inline-block;
 }
 .red{
-    background: linear-gradient(rgb(122 74 14), rgb(245 62 113) , rgb(162 27 27));
+    box-shadow: 0 0 20px rgba(83, 14, 14, 0.8);
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113) , rgb(162, 27, 27));
 }
 .green{
+    box-shadow: 0 0 20px #3b7e20cc;
     background: linear-gradient(#55680d, #71f53e, #116c31);
 }
 .blue{
-    background: linear-gradient(hsl(186 76% 16%), hsl(223 90% 60%), hsl(240 56% 42%));
+    box-shadow: 0 0 20px hsla(223, 59%, 31%, .8);
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
 }
 /*
     Primary Colors:
