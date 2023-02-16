@@ -14,6 +14,8 @@ h1{
     text-align: center;
 }
 p{
+    display: flex;
+    justify-content: space-between;
     margin: 0;
 }
 .bold{
