@@ -36,6 +36,9 @@ p{
     font-size: 2em;
     font-weight: 700;
 }
+.daily-value p:not(.no-divider){
+    border-bottom: 1px solid #888989;
+}
 .bold{
     font-weight: 800;
 }
