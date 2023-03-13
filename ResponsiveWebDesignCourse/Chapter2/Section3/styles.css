@@ -45,6 +45,9 @@ p{
 .indent{
     margin-left: 1em;
 }
+.double-indent{
+    margin-left: 2em;
+}
 .label{
     width: 270px;
     margin: 20px auto;
@@ -70,4 +73,10 @@ p{
 }
 .right{
     justify-content: flex-end;
+}
+.note{
+    font-size: .6rem;
+    margin:5px 0;
+    padding: 0 8px;
+    text-indent: -8px;
 }
