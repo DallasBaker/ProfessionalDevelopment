@@ -15,13 +15,13 @@
         <nav>
             <ul>
                 <li>
-                    <a href="">INFO</a>
+                    <a href="#student-info">INFO</a>
                 </li>
                 <li>
-                    <a href="">HTML</a>
+                    <a href="#html-questions">HTML</a>
                 </li>
                 <li>
-                    <a href="">CSS</a>
+                    <a href="#css-questions">CSS</a>
                 </li>
             </ul>
         </nav>
@@ -30,9 +30,29 @@
         <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
             <section role="region" aria-labelledby="student-info">
                 <h2 id="student-info">student info</h2>
+                <div class="info">
+                    <label for="name">Enter your name here: </label>
+                    <input id="name" type="text" name="nameField">
+                </div>
+                <div class="info">
+                    <label for="email">Enter your email address: </label>
+                    <input id="email" type="email" name="emailField">
+                </div>
+                <div class="info">
+                    <label for="dob">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+                    <input id="dob" type="date" name="birthDateField">
+                </div>
             </section>
             <section role="region" aria-labelledby="html-questions">
                 <h2 id="html-questions">html questions</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question"></fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question"></fieldset>
+                </div>
             </section>
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">css questions</h2>
