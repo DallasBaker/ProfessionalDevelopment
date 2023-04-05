@@ -47,29 +47,69 @@
                 <h2 id="html-questions">HTML</h2>
                 <div class="question-block">
                     <p>1</p>
-                    <fieldset class="question" name="divs">
-                        <legend>Do divs have predefined css?</legend>
+                    <fieldset class="question" name="html-question-one">
+                        <legend>
+                            The legend element represents a caption for the content of its
+                            parent fieldset element</legend>
                         <ul class="answers-list">
-                            <li></li>
-                            <li ></li>
+                            <li>
+                                <label for="q1-a1">
+                                    <input id="q1-a1" type="radio" name="qOneAnswer" value="True">
+                                    True
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q1-a2">
+                                    <input id="q1-a2" type="radio" name="qOneAnswer" value="False">
+                                    False
+                                </label>
+                            </li>
                         </ul>
                     </fieldset>
                 </div>
                 <div class="question-block">
                     <p>2</p>
-                    <fieldset class="question" name="ul-and-ol">
-                        <legend>What commonly goes inside ul's and ol's?</legend>
+                    <fieldset class="question" name="html-question-two">
+                        <legend>
+                            A label element nesting an input element is required to have a
+                            for attribute with the same value as the input's id</legend>
                         <ul class="answers-list">
-                            <li></li>
-                            <li></li>
+                            <li>
+                                <label for="q2-a1">
+                                    <input id="q2-a1" type="radio" name="qTwoAnswer" value="True">
+                                    True
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q2-a2">
+                                    <input id="q2-a2" type="radio" name="qTwoAnswer" value="False">
+                                    False
+                                </label>
+                            </li>
                         </ul>
                     </fieldset>
                 </div>
             </section>
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">css questions</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="requiredAns">Are you a frontend developer?</label>
+                    </div>
+                    <div class="answer">
+                        <select name="frontend-dev" id="requiredAns" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block"> 
+                        <label for="">Do you have any questions:</label>
+                    </div>
+                    <div class="answer"></div>
+                </div>
             </section>
-            <button type="submit"></button>
+            <button type="submit">Submit</button>
         </form>
     </main>
 </body>
