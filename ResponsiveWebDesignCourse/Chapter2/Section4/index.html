@@ -15,13 +15,13 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#student-info">INFO</a>
+                    <a href="#student-info" accesskey="i">INFO</a>
                 </li>
                 <li>
-                    <a href="#html-questions">HTML</a>
+                    <a href="#html-questions" accesskey="h">HTML</a>
                 </li>
                 <li>
-                    <a href="#css-questions">CSS</a>
+                    <a href="#css-questions" accesskey="c">CSS</a>
                 </li>
             </ul>
         </nav>
@@ -104,13 +104,24 @@
                         </select>
                     </div>
                     <div class="question-block"> 
-                        <label for="">Do you have any questions:</label>
+                        <label for="questions-textarea" name="questions-label">Do you have any questions:</label>
                     </div>
-                    <div class="answer"></div>
+                    <div class="answer">
+                        <textarea name="questions" id="questions-textarea" cols="30" rows="10"
+                        placeholder="how much do I get paid?"></textarea>
+                    </div>
                 </div>
             </section>
-            <button type="submit">Submit</button>
+            <button type="submit">Send</button>
         </form>
     </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
 </body>
 </html>
