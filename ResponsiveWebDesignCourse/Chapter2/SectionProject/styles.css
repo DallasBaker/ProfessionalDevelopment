@@ -1,0 +1,16 @@
+main{
+    background-color: #EEEEEE;
+    text-align: center;
+}
+figure{
+    text-align: center;
+    background-color: white;
+}
+#tribute-info > ul{
+    text-align: left;
+}
+#img-div > img{
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
