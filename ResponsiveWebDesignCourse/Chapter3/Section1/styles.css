@@ -17,9 +17,7 @@ span[class~="sr-only"]{
     padding: 0 !important;
     margin: -1px !important;
 }
-span{
-    font-weight: normal;
-}
+
 h1{
     max-width: 37.25rem;
     margin: 0 auto;
@@ -53,7 +51,7 @@ tbody td{
     min-width: 4rem;
     max-width: 4rem;
 }
-th{
+tbody th{
     width: calc(100% - 12rem);
 }
 table caption{
@@ -63,6 +61,50 @@ table caption{
     color: #356eaf;
     font-size: 1.3em;
     font-weight: normal;
+}
+tr[class="total"]{
+    font-weight: bold;
+    border-bottom: 4px double #0a0a23;
+}
+tr[class="total"] th{
+    text-align: left;
+    padding: .5rem 0 .25rem .5rem;
+}
+tr.total td{
+    text-align: right;
+    padding: 0 .25rem;
+}
+tr.total td:nth-of-type(3){
+    padding-right: .5rem;
+}
+tr.total:hover{
+    background-color: #99c9ff;
+}
+td.current{
+    font-style: italic;
+}
+tr.data{
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+tr.data th{
+    text-align: left;
+    padding-top: .3rem;
+    padding-left: .5rem;
+}
+tr.data th .description{
+    display: block;
+    font-weight: normal;
+    font-style: italic;
+    padding: 1rem 0 0.75rem;
+    margin-right: -13.5rem;
+}
+tr.data td{
+    vertical-align: top;
+    text-align: right;
+    padding: .3rem .25rem 0;
+}
+tr.data td:last-of-type{
+    padding-right: .5rem;
 }
 #years{
     margin: 0 -2px;
