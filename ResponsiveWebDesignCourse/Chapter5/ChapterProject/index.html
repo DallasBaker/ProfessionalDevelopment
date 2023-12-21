@@ -7,6 +7,86 @@
     <title>Portfolio Webpage</title>
 </head>
 <body>
-    
+    <header>
+    </header>
+    <nav id="navbar">
+            <button type="button" aria-controls="nav-menu" aria-expanded="false">
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                </svg>
+            </button>
+        <ul id="nav-menu">
+            <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">testing</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="welcome-section">
+            <h1>Portfolio Webpage</h1>
+            <img src="" alt="">
+        </section>
+        <section id="projects">
+            <h2>Project Tiles</h2>
+            <div>
+                <a class="project-tile" href="" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt="">
+                    <p></p>
+                </a>
+                <a class="project-tile" href="" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt="">
+                    <p></p>
+                </a>
+                <a class="project-tile" href="" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt="">
+                    <p></p>
+                </a>
+                <a class="project-tile" href="" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt="">
+                    <p></p>
+                </a>
+                <a class="project-tile" href="" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt="">
+                    <p></p>
+                </a>
+                <a class="project-tile" href="" target="_blank" rel="noopener noreferrer">
+                    <img src="" alt="">
+                    <p></p>
+                </a>
+            </div>
+        </section>
+        <section id="contact">
+            <h2></h2>
+            <p></p>
+            <div class="contact-links">
+                <a id="profile-link" class="contact-details" href="http://" target="_blank" rel="noopener noreferrer">
+                    <i></i>
+                    GitHub
+                </a>
+                <a class="contact-details" href="" target="_blank" rel="noopener noreferrer">
+                    <i></i>
+                    Linkedin
+                </a>
+                <a class="contact-details" href="mailto:" target="_blank" rel="noopener noreferrer">
+                    <i></i>
+                    Email
+                </a>
+                <a class="contact-details" href="tel:+" target="_blank" rel="noopener noreferrer">
+                    <i></i>
+                    Call Me                    
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
+<script>
+    const navButton = document.querySelector('button[aria-expanded]')
+    function toggleNav({target}){
+        const expanded = navButton.getAttribute('aria-expanded') === 'true'
+        navButton.setAttribute('aria-expanded', !expanded)
+    }
+    navButton.addEventListener('click', toggleNav)
+</script>
 </html>

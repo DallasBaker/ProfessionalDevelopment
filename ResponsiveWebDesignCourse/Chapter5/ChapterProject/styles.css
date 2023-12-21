@@ -1,0 +1,26 @@
+#navbar{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#nav-menu{
+    float: right;
+}
+[aria-controls="nav-menu"]{
+    display: none;
+}
+
+
+@media only screen and (max-width:750px) {
+    [aria-controls="nav-menu"]{
+        display: block;
+    }
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
+    [aria-expanded="true"] ~ ul {
+        display: block;
+    }
+}
